@@ -2,7 +2,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /*purple-green    deeppurple-amber   pink-bluegrey indigo-pink*/
-
+@import "~bootstrap/dist/css/bootstrap.css";
 body {
      margin: 0;
      background: #F2F2F2;
@@ -14,6 +14,8 @@ body {
     display: grid;
     grid-template-columns: 70px auto;
     height: 100%;
+
+    
 
     #content {
         padding: 30px 50px;

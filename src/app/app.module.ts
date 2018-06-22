@@ -19,7 +19,6 @@ import {CdkTreeModule} from '@angular/cdk/tree';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
-
 import {
   MatAutocompleteModule,
   MatBadgeModule,

@@ -1,9 +1,32 @@
+<h3>login</h3>
 <form class="example-form">
   <mat-form-field class="example-full-width">
-    <input matInput placeholder="Favorite food" value="Sushi">
+    <input matInput placeholder="email" type="email" value="" required>
   </mat-form-field>
 
+<mat-form-field class="example-full-width">
+    <input matInput placeholder="password" type="password" value="" required>
+  </mat-form-field>
+  <!-- 
   <mat-form-field class="example-full-width">
     <textarea matInput placeholder="Leave a comment"></textarea>
-  </mat-form-field>
+  </mat-form-field> -->
+<button class="btn btn-danger" mat-raised-button>login</button>
+<button (click)="loginFormClear()" class="btn btn-warning" mat-raised-button>clear</button>
 </form>
+<div class="container">
+    <h1>Hero Form</h1>
+    {{diagnostic}}
+    <form #heroForm="ngForm">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="name" required [(ngModel)]="model.email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" required [(ngModel)]="model.password" name="password">
+      </div> 
+      <button type="submit" class="btn btn-success">Submit</button>
+ 
+    </form>
+</div>
