@@ -18,6 +18,8 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { TopnavbarComponent } from './topnavbar/topnavbar.component';
+import { BrowserTransferStateModule } from '@angular/platform-browser';
 
 import {
   MatAutocompleteModule,
@@ -68,10 +70,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DetailsComponent,
     LoginComponent,
     SignupComponent,
-    ChatnowComponent
+    ChatnowComponent,
+    TopnavbarComponent,
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'ng6client1' }),
     AppRoutingModule,
     HttpClientModule,
     FormsModule, 

@@ -6,10 +6,19 @@ import { PostsComponent } from './posts/posts.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ChatnowComponent } from './chatnow/chatnow.component';
+import { TopnavbarComponent } from './topnavbar/topnavbar.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: UsersComponent
+  },
+  {
+    path: 'topbar',
+    component: TopnavbarComponent
+  },
+  {
+    path: 'users',
     component: UsersComponent
   },
   {
