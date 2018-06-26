@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Userproperty } from '../classes/userproperty';
-
+import { Userproperty } from 'classes/userproperty';
 
  let myHero =  new Userproperty('email@mail.com','password');
 
