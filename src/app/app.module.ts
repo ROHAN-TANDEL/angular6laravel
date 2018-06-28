@@ -58,6 +58,18 @@ import {
 } from '@angular/material';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { BrowserTransferStateModule } from '@angular/platform-browser';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
+import { EmployeesComponent } from './employees/employees.component';
+import { EmployeeComponent } from './employees/employee/employee.component';
+import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
+import { ToastrModule } from 'ngx-toastr';
+import { RavonHomeComponent } from './ravon-home/ravon-home.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +80,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DetailsComponent,
     LoginComponent,
     SignupComponent,
-    ChatnowComponent
+    ChatnowComponent,
+    AnimalDetailComponent,
+    EmployeesComponent,
+    EmployeeComponent,
+    EmployeeListComponent,
+    RavonHomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -117,6 +134,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTreeModule, 
     BrowserModule,
     FormsModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    BrowserModule.withServerTransition({ appId: 'ng6client' }), // <-- here
+    BrowserTransferStateModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

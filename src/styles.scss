@@ -3,6 +3,8 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 /*purple-green    deeppurple-amber   pink-bluegrey indigo-pink*/
 @import "~bootstrap/dist/css/bootstrap.css";
+
+@import "assets/cart/css/core-style.css";
 body {
      margin: 0;
      background: #F2F2F2;
@@ -53,3 +55,10 @@ body {
         }
     }
 }
+
+input.ng-invalid.ng-dirty{
+    border: 1px solid red;
+}
+button:hover,a.btn:hover{
+    cursor: pointer;
+   }

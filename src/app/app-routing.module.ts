@@ -6,11 +6,17 @@ import { PostsComponent } from './posts/posts.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ChatnowComponent } from './chatnow/chatnow.component';
+import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
+// import { AppComponent } from './app.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: AppComponent
+  // },
   {
-    path: '',
-    component: UsersComponent
+    path: 'animals/:name',
+    component: AnimalDetailComponent
   },
   {
     path: 'details/:id',
