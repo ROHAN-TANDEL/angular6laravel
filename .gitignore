@@ -41,3 +41,7 @@ Thumbs.db
 #manual add
 /.gitbkp
 /src/assets
+/template
+/webpack.server.config.js
+/server.ts
+/classes
