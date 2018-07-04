@@ -37,7 +37,7 @@
               "src/assets/carousal/slick/jquery-3.3.1.min.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
-              "src/assets/carousal/slick/slick.min.js",
+              "src/assets/carousal/slick/slick.min.js"
             ]
           },
           "configurations": {

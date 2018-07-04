@@ -25,4 +25,8 @@ export class DataService {
   {
     return this.http.get('http://localhost:4203')
   }
+  getPost()
+  {
+    return this.http.get('http://localhost:4203')
+  }
 }

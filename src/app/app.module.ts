@@ -70,6 +70,9 @@ import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeListComponent } from './employees/employee-list/employee-list.component';
 import { ToastrModule } from 'ngx-toastr';
 import { RavonHomeComponent } from './ravon-home/ravon-home.component';
+import { RavonUserboardComponent } from './ravon-userboard/ravon-userboard.component';
+import { RavonTopboardComponent } from './ravon-topboard/ravon-topboard.component';
+import { RavonLoginComponent } from './ravon-login/ravon-login.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +89,9 @@ import { RavonHomeComponent } from './ravon-home/ravon-home.component';
     EmployeeComponent,
     EmployeeListComponent,
     RavonHomeComponent,
+    RavonUserboardComponent,
+    RavonTopboardComponent,
+    RavonLoginComponent,
   ],
   imports: [
     BrowserModule,

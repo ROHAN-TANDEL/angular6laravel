@@ -7,13 +7,24 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ChatnowComponent } from './chatnow/chatnow.component';
 import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
+import { RavonUserboardComponent } from './ravon-userboard/ravon-userboard.component';
+import { RavonLoginComponent } from './ravon-login/ravon-login.component';
+import { RavonHomeComponent } from './ravon-home/ravon-home.component';
 // import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   component: AppComponent
-  // },
+  {
+    path: '',
+    component: RavonLoginComponent
+  },
+  {
+    path: 'userboard',
+    component: RavonUserboardComponent
+  },
+  {
+    path: 'home',
+    component: RavonHomeComponent
+  },
   {
     path: 'animals/:name',
     component: AnimalDetailComponent

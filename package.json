@@ -25,6 +25,7 @@
     "@angular/pwa": "^0.6.8",
     "@angular/router": "^6.0.7",
     "@angular/service-worker": "^6.0.7",
+    "@fortawesome/fontawesome": "^1.1.8",
     "@nguniversal/express-engine": "^6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^6.0.0",
     "angular-material": "^1.1.10",
