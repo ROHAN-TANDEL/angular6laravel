@@ -19,9 +19,21 @@
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
 
+<script type="text/javascript" src="node_modules/auth0-js/build/auth0.js"></script>
+
+<script src="https://cdn.auth0.com/js/auth0/9.5.1/auth0.min.js"></script>
+
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1976d2">
   <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+
+  <script type="text/javascript">
+  var webAuth = new auth0.WebAuth({
+    domain:       'krishananrohan.auth0.com',
+    clientID:     'xcKBZqprT3GS1BjG8RBKgv7Py47f0XuY'
+  });
+</script>
+
 </head>
 <body>
   <app-root></app-root>

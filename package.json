@@ -31,6 +31,7 @@
     "angular-material": "^1.1.10",
     "angular-polyfills": "^1.0.1",
     "angularfire2": "^5.0.0-rc.11",
+    "auth0-js": "^9.6.1",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.7",
     "firebase": "^5.2.0",
