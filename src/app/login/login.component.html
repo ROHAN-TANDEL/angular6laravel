@@ -4,6 +4,14 @@
     <input matInput placeholder="email" type="email" value="" required>
   </mat-form-field>
 
+<mat-form-field>
+  <mat-select placeholder="Favorite food">
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
 <mat-form-field class="example-full-width">
     <input matInput placeholder="password" type="password" value="" required>
   </mat-form-field>

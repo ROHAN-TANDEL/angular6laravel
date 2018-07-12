@@ -12,7 +12,7 @@ import { Userproperty } from 'classes/userproperty';
 })
 
 export class LoginComponent implements OnInit {
-
+	foods: Object;
 	submitted = false;
 	model =  new Userproperty('email@mail.com','password');
 	onSubmit() 
@@ -27,5 +27,12 @@ export class LoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	
+  	 this.foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
+
   }
 }
