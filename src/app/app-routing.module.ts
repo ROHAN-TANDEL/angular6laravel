@@ -10,12 +10,27 @@ import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 import { RavonUserboardComponent } from './ravon-userboard/ravon-userboard.component';
 import { RavonLoginComponent } from './ravon-login/ravon-login.component';
 import { RavonHomeComponent } from './ravon-home/ravon-home.component';
+import { SignpadComponent } from './signpad/signpad.component';
+import { ArticleformComponent } from './articleform/articleform.component';
+import { ArticletemplateformComponent } from './articletemplateform/articletemplateform.component';
 // import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
     path: '',
     component: RavonLoginComponent
+  },
+  {
+    path: 'templateform',
+    component: ArticletemplateformComponent
+  },
+  {
+    path: 'art',
+    component: ArticleformComponent
+  },
+  {
+    path: 'signpad',
+    component: SignpadComponent
   },
   {
     path: 'userboard',

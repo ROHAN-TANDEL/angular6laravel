@@ -3,6 +3,8 @@ import { Userproperty } from 'classes/userproperty';
 
  let myHero =  new Userproperty('email@mail.com','password');
 
+console.log("Hello world !---");
+console.log("Hello world !---");
  console.log(myHero);
 
 @Component({
@@ -19,20 +21,22 @@ export class LoginComponent implements OnInit {
 	{
 		this.submitted = true;
 	}
+
 	loginFormClear() 
 	{
 		this.model = new Userproperty('','');
 	}
-	 get diagnostic() { return JSON.stringify(this.model); }
-  constructor() { }
 
-  ngOnInit() {
+	get diagnostic() { return JSON.stringify(this.model); }
   	
-  	 this.foods = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+  	constructor() { }
 
-  }
+  	ngOnInit() {
+  	
+  		this.foods = [
+    		{value: 'steak-0', viewValue: 'Steak'},
+    		{value: 'pizza-1', viewValue: 'Pizza'},
+    		{value: 'tacos-2', viewValue: 'Tacos'}
+  		];
+	}
 }

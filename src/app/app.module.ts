@@ -73,7 +73,11 @@ import { RavonHomeComponent } from './ravon-home/ravon-home.component';
 import { RavonUserboardComponent } from './ravon-userboard/ravon-userboard.component';
 import { RavonTopboardComponent } from './ravon-topboard/ravon-topboard.component';
 import { RavonLoginComponent } from './ravon-login/ravon-login.component';
-
+import { SignpadComponent } from './signpad/signpad.component';
+import { SignaturePadModule } from 'angular2-signaturepad';
+import { ArticleformComponent } from './articleform/articleform.component';
+import { ArticletemplateformComponent } from './articletemplateform/articletemplateform.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -92,6 +96,10 @@ import { RavonLoginComponent } from './ravon-login/ravon-login.component';
     RavonUserboardComponent,
     RavonTopboardComponent,
     RavonLoginComponent,
+    SignpadComponent,
+    ArticleformComponent,
+    ArticletemplateformComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -146,6 +154,7 @@ import { RavonLoginComponent } from './ravon-login/ravon-login.component';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     ToastrModule.forRoot(),
+    SignaturePadModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
